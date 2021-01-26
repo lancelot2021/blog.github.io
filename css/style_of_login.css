@@ -23,6 +23,8 @@ header{
 }
 header > div.login-wrapper{
     display: grid;
+    justify-self: center;
+    align-self: center;
 }
 header > div.login-wrapper{
     justify-self: center;
@@ -48,6 +50,33 @@ footer > div.site-info{
     padding: 10px;
     text-align: center;
 }
-footer > div.site-info > p{
+div.authorization{
+    width: 30%;
+    height: 80%;
+    align-self: center;
+    outline: 2px solid;
+}
+footer > div.site-info > p {
     color: white;
+}
+main{
+    display: grid;
+}
+main > div.authorization {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+}
+div.authorization > form{
+    padding: 1rem;
+    justify-self: center;
+    align-self: center;
+}
+form > div.button{
+    display: block;
+}
+form > div.top {
+    display: grid;
+    background-color: blue;
+    justify-self: center;
 }
