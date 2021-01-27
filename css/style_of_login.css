@@ -20,6 +20,7 @@ header{
     grid-template-columns: 90% 10%;
     height: 100%;
     background-color: cornflowerblue;
+    border-bottom: 2px solid maroon;
 }
 header > div.login-wrapper{
     display: grid;
@@ -35,11 +36,6 @@ header div.login > a{
 }
 header div.login > a:hover{
     color: yellow;
-}
-div.book{
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: 10% 90%;
 }
 footer{
     background-color: black;
@@ -65,18 +61,23 @@ main{
 main > div.authorization {
     display: grid;
     justify-self: center;
-    align-self: center;
 }
 div.authorization > form{
-    padding: 1rem;
-    justify-self: center;
-    align-self: center;
+    grid-template-rows: 10% 90%;
+    height: 100%;
+    width: 100%;
 }
-form > div.button{
+form > div.button {
     display: block;
+    text-align: center;
+}
+form > div.login_authorization {
+    margin-top: 30%;
+    display: block;
+    text-align: center;
 }
 form > div.top {
-    display: grid;
-    background-color: blue;
-    justify-self: center;
+    background-color: darkturquoise;
+    border-bottom: 2px solid maroon;
+    text-align: center;
 }

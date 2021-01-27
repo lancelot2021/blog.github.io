@@ -20,6 +20,7 @@ header{
     grid-template-columns: 90% 10%;
     height: 100%;
     background-color: cornflowerblue;
+    border-bottom: 2px solid maroon;
 }
 header > div.login-wrapper{
     display: grid;
