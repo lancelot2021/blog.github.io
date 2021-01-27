@@ -1,79 +1,75 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-div.author > h3{
-    color: #ffffff;
+div.author > h3 {
+    color: white;
 }
-html{
-    width: 100%;
+html {
     height: 100%;
+    width: 100%;
 }
-body{
+body {
     display: grid;
     grid-template-rows: 12% 78% 10%;
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
-header{
+header {
     display: grid;
     grid-template-columns: 90% 10%;
     height: 100%;
     background-color: cornflowerblue;
     border-bottom: 2px solid maroon;
 }
-header > div.login-wrapper{
+header > div.login_wrapper {
     display: grid;
     justify-self: center;
     align-self: center;
 }
-header div.login > a{
+header > div.login_wrapper {
+    justify-self: center;
+    text-align: center;
+}
+div.login > a {
     text-decoration: none;
 }
-header div.login > a:hover{
+header div.login > a:hover {
     color: yellow;
 }
-footer{
+footer {
     background-color: black;
     display: grid;
 }
-footer > div.site-info{
+footer > div.site_info {
     margin: 0;
     padding: 10px;
     text-align: center;
 }
-div.authorization{
-    width: 30%;
-    height: 80%;
-    align-self: center;
-    outline: 2px solid;
-}
-footer > div.site-info > p {
+footer div.site_info > p{
     color: white;
 }
-main{
+div.registration_users {
     display: grid;
-}
-main > div.authorization {
-    display: grid;
+    width: 30%;
+    height: 95%;
+    outline: 2px solid black;
     justify-self: center;
+    align-self: center;
 }
-div.authorization > form{
+main {
+    display: grid;
+}
+div.registration_users > form {
     grid-template-rows: 10% 90%;
     height: 100%;
     width: 100%;
 }
-form > div.button {
-    display: block;
-    text-align: center;
-}
-form > div.login_authorization {
-    margin-top: 28%;
-    display: block;
-    text-align: center;
-}
-form > div.top {
-    background-color: darkturquoise;
+div.hat{
+    background-color: cornflowerblue;
     border-bottom: 2px solid maroon;
+}
+div.hat > h1 {
     text-align: center;
+    color: white;
 }
