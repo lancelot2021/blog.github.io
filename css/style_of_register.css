@@ -60,11 +60,6 @@ div.registration_users {
 main {
     display: grid;
 }
-div.registration_users > form {
-    grid-template-rows: 10% 90%;
-    height: 100%;
-    width: 100%;
-}
 div.hat{
     background-color: cornflowerblue;
     border-bottom: 2px solid maroon;
@@ -72,4 +67,26 @@ div.hat{
 div.hat > h1 {
     text-align: center;
     color: white;
+}
+div.bottom > div.pib{
+    justify-self: center;
+    align-self: center;
+}
+div.bottom{
+    height: 100%;
+    display: grid;
+}
+div.pib > * {
+    display: block;
+    margin-top: 1rem;
+}
+div.pib select{
+    width: auto;
+}
+div.pib > label:nth-child(1){
+    margin: 0;
+}
+form{
+    display: grid;
+    grid-template-rows: 10% 90%;
 }
