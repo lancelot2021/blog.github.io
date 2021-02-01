@@ -67,3 +67,13 @@ footer > div.site-info{
 footer > div.site-info > p {
     color: white;
 }
+div.info > div.readMore {
+    display: grid;
+}
+div.info div.readMore > a {
+    justify-self: right;
+    text-decoration: none;
+}
+div.info div.readMore > a:hover {
+    color: yellow;
+}
