@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Git Commands</title>
+    <link rel="stylesheet" href="../css/style_commands.css">
+</head>
+<body>
+    <header>
+        <div class="author_command">
+            <h1>Мій особистий блог</h1>
+            <h3>Нікіта Савицький</h3>
+        </div>
+        <div class="authorization_command">
+            <div class="login_or_register">
+                <a href="login.html">Вхід</a>
+                <a href="register.html">Реєстрація</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="first_column">
+            <h3>Create Repository</h3>
+            <p>From scratch -- Create a new local repository</p>
+            <p><b>$ git init [project_name]</b></p>
+            <p>Donwload from an exiting repository</p>
+            <p><b>$ git clone my_url</b></p>
+            <h3>Observe your Repository</h3>
+            <p>List new or modified files not yet commited</p>
+            <p><b>$ git status</b></p>
+            <p>Show the changes to files not yet staged</p>
+            <p><b>$ git diff</b></p>
+            <p>Show the changes to staged files</p>
+            <p><b>$ git diff -cached</b></p>
+            <p>Show all staged and unstaged file changes</p>
+            <p><b>git diff HEAD</b></p>
+            <p>Show the changes between two commits</p>
+            <p><b>$ git diff commit1 commit2</b></p>
+            <p>List the change dates and authors for a file</p>
+            <p><b>$ git blame [file]</b></p>
+            <p>Show the file changes for a commit if and/or file</p>
+            <p><b>$ git show [commit]:[file]</b></p>
+            <p>Show full change history</p>
+            <p><b>$ git log</b></p>
+            <p>Show change history for file/directory including diffs</p>
+            <p><b>$ git log -p [file/directory]</b></p>
+        </div>
+        <div class="second_column">
+            <h3>Working with Branches</h3>
+            <p>List local branches</p>
+            <p><b>$ git branch</b></p>
+            <p>List all branches, local and remote</p>
+            <p><b>$ git branch -av</b></p>
+            <p>Switch to a branch, my_branch,<br> and update working directory</p>
+            <p><b>$ git checkout my_branch</b></p>
+            <p>Create a new branch called new_branch</p>
+            <p><b>$ git branch new_branch</b></p>
+            <p>Delete the branch called my_branch</p>
+            <p><b>$ git branch -d my_branch</b></p>
+            <p>Merge branch_a into branch_b</p>
+            <p><b>$ git checkout branch_b</b></p>
+            <p><b>$ git merge branch_a</b></p>
+            <p>Tag the current commit</p>
+            <p><b>$ git tag my_tag</b></p>
+        </div>
+        <div class="third_column">
+            <h3>Make a change</h3>
+            <p>Staged the file, ready for commit</p>
+            <p><b>$ git add [file]</b></p>
+            <p>Stage all changed files, ready for commit</p>
+            <p><b>git add .</b></p>
+            <p>Commit all staged files to versionated history</p>
+            <p><b>$ git commit -m "commit message"</b></p>
+            <p>Commit all your tracked files to <br> versioned history</p>
+            <p><b>$ git commit -an "commit message"</b></p>
+            <p>Unstages file, keeping the file changes</p>
+            <p><b>$ git reset [file]</b></p>
+            <p>Reset everything to the last commit</p>
+            <p><b>$ git reset --hard</b></p>
+        </div>
+        <div class="fourth_column">
+            <h3 class="Synchronize">Synchronize</h3>
+            <p>Get the latest changes from origin<br> (no merge)</p>
+            <p><b>$ git fetch</b></p>
+            <p>Fetch the latest changes from origin<br> and merge</p>
+            <p><b>$ git pull</b></p>
+            <p>Fetch the latest changes from origin<br> and rebase</p>
+            <p><b>$ git pull --rebase</b></p>
+            <p>Push local changes to the origin</p>
+            <p><b>$ git push</b></p>
+            <h3 class="Finally">Finally!</h3>
+            <p>When in doubt, use git help</p>
+            <p><b>$ git command --help</b></p>
+        </div>
+    </main>
+    <footer>
+        <div class="site_info_command">
+            <p>© Всі права захищені</p>
+            <p>Розробник курсант 281 групи Савицький Нікіта</p>
+    </div>
+    </footer>
+</body>
+</html>
