@@ -1,7 +1,7 @@
 const seconds = (total) => total % 60.0;
 //console.log(seconds(5));
-const perimetr = (side, count) => side*count;
-//console.log(perimetr(3,3));
+const perimeter = (side, count) => side*count;
+//console.log(perimeter(3,3));
 const fun3 = (n) => {
     let arr = new Array(n);
     for (let i = 0; i < arr.length; i++) {
@@ -98,20 +98,31 @@ function fun7(){
 //     return a / b
 // }
 // console.log(Div(4,2))
-// function isAlive(a){
-//     if (a>0){
-//         console.log('Your number is positive')
-//     }
-//     else console.log('Your number is negative')
-//
-//     if (a % 2 == 0 && a % 5 == 0 && a % 3 == 0 && a % 6 == 0 && a % 9 == 0){
-//         console.log('Число а делиться без остачи')
-//     }
-//     else console.log('Число а имеет остачу от деления')
-//
-// }
+function isAlive(a){
+    if (a>0){
+        console.log('Your number is positive')
+    }
+    else console.log('Your number is negative')
+    for (let i = 2; i < a; i++) {
+        if (a % i == 0) {
+            console.log("Це не просте число")
+            break;
+        }
+        else console.log("Це число просте")
+    }
+    if (a % 2 == 0 && a % 5 == 0 && a % 3 == 0 && a % 6 == 0 && a % 9 == 0){
+        console.log('Число а ділиться без залишку')
+    }
+    else console.log('Число а має остачу від ділення')
 
-function fun10(arr){
-    return arr.filter((v)=> isNaN(v)).map((v) => v*=v).reverse();
 }
-console.log(fun10([1,2,3,4,5]).forEach((v) => console.log(v)));
+// isAlive(139);
+function fun10(arr){
+    for (let i = 0; i < arr.length; i++) {
+        if(!Number.isNaN(arr[i])) {
+            arr[i] = Math.pow(arr[i], 2);
+        }
+    }
+    return arr.reverse().join(" | ");
+}
+console.log(fun10([2, 7, "supply", 9, "cow"]));
